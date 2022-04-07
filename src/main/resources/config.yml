@@ -1,0 +1,57 @@
+teleport-to-spawn-on:
+  first-join: true
+  join: true
+  respawn: false
+  void-fall: false
+teleport-delay-in-seconds: 0
+metrics: false
+disable-spawn-command-in-pvp:
+  enabled: true
+  warning-message: '§cIn PvP kannst du nicht teleportieren!.'
+options:
+  set-gamemode-on-join:
+    enabled: false
+    gamemode: 0
+  set-fly-on-join:
+    enabled: false
+    fly: false
+  set-max-health-on-join: false
+  set-max-food-level-on-join: false
+spawn-command:
+  message-enabled: true
+  message: '§6[Lobby] §7Zum Spawnpunkt teleportiert.'
+  need-permission: false
+messages:
+  no-permission: '§cDazu hast du keine Berechtigung.'
+  teleported-other-player: '§6[Lobby] §7%target% zu Spawnpunkt teleportiert.'
+  spawn-not-set: '§6[Lobby] §cSpawnpunkt noch nicht gesetzt bitte nutze §6/setspawn§c!.'
+  player-not-found: '§6[Lobby] &cSpieler nicht gefunden.'
+  spawn-successfully-set: '§6[Lobby] §7Spawnpunkt erfolgreich gesetzt.'
+  config-reloaded: '§6[Lobby] §7Config neu geladen.'
+  console-use-command: '§cDas können nur Spieler ausführen.'
+  teleport-delay: '§6Teleport wird in %seconds% Sekunden ausgeführt. §cNicht bewegen!'
+  player-move: '§cDu hast dich bewegt.'
+broadcast:
+  player-join:
+    enabled: false
+    message: '§6%player% ist dem Server beigetreten!'
+    hide: false
+  player-quit:
+    enabled: false
+    message: '§6%player% hat den Server verlassen!'
+    hide: false
+  first-join:
+    enabled: true
+    message: '§6%player% ist zum ersten mal hier!'
+join-message:
+  enabled: true
+  text:
+    - '§6Hallo, %player%!'
+first-join-message:
+  enabled: false
+  text:
+    - '§6Willkomen, %player%!'
+deathHeight: '80'
+config-version: '0.4'
+
+

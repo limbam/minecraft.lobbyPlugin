@@ -1,0 +1,58 @@
+name: Lobby
+version: ${project.version}
+main: net.mineground.lobby.Main
+api-version: 1.16
+authors: [ limbam ]
+description: Lobby
+company:
+commands:
+  lobby:
+    description: Generelle hilfe
+  cc:
+    description: Leert den chat.
+  spawn:
+    description: Teleport zum Spawnpunkt.
+  setspawn:
+    description: Setzt den Spawnpunkt.
+  build:
+    description: BuildMode umschalten
+permissions:
+  lobby.setspawn:
+    description: Erlaubt /setspawn zu nutzen.
+    default: op
+    lobby.spawn:
+      description: Erlaubt /spawn zu nutzen.
+      default: true
+    lobby.teleportothers:
+      description: Erlaubt andere Spieler zum Spawnpunkt zu teleportieren.
+      default: false
+    lobby.help:
+      description: Erlaubt hilfe mit /spawn comanndos.
+      default: op
+      children:
+        lobby.info: true
+        lobby.reload: true
+        lobby.setdelay: true
+    lobby.info:
+      description: Erlaubt /spawn info zu nutzen.ä
+      default: op
+    lobby.reload:
+      description: Erlaubt lobby mit /lobby reload neuzustarten.
+      default: op
+    lobby.setdelay:
+      description: Erlaubt /lobby verzögerung einzustellen.
+      default: op
+    lobby.bypassdelay:
+      description: Erlaubt die teleportverzögerung zu umgehen.
+      default: false
+    lobby.bypasscmdblock:
+      description: Erlaubt die Blockierung von /spawn zu umgehen.
+      default: false
+    lobby.*:
+      description: Global permission
+      default: false
+      children:
+        lobby.setspawn: true
+        lobby.spawn: true
+        lobby.teleportothers: true
+        lobby.help: true

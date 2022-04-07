@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="target">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/target/original-Lobby-0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/Lobby-0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/Lobby-0.4-shaded.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
