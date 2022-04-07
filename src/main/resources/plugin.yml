@@ -33,7 +33,7 @@ permissions:
         lobby.reload: true
         lobby.setdelay: true
     lobby.info:
-      description: Erlaubt /spawn info zu nutzen.ä
+      description: Erlaubt /spawn info zu nutzen.
       default: op
     lobby.reload:
       description: Erlaubt lobby mit /lobby reload neuzustarten.
