@@ -4,15 +4,11 @@ import net.mineground.lobby.Utils.Spawn;
 import net.mineground.lobby.commands.*;
 import net.mineground.lobby.config.Config;
 import net.mineground.lobby.listeners.*;
-import net.mineground.lobby.commands.LobbyCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -49,6 +45,7 @@ public class Main extends JavaPlugin {
         getCommand("cc").setExecutor(new ChatClearCommand());
         getCommand("lobby").setExecutor(new LobbyCommand());
         getCommand("build").setExecutor(new BuildCommand());
+        getCommand("getsword").setExecutor(new SwordCommand());
     }
 
     private void registerListeners() {
